@@ -2,4 +2,5 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/slingresourcesupertypetest"/>
     <filter root="/content/slingresourcesupertypetest"/>
+    <filter root="/content/slingresourcesupertypetest2"/>
 </workspaceFilter>

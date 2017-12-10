@@ -9,26 +9,40 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <label1
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/text"
-                text="Parent component, sling:resourceSuperType is not set"/>
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/text"
+                    text="Parent component, sling:resourceSuperType is not set"/>
             <inherritparent
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="slingresourcesupertypetest/components/inheritparent"/>
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="slingresourcesupertypetest/components/inheritparent"/>
             <label2
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/text"
-                text="Child1 component, sling:resourceSuperType is set to aemdesign/components/layout/inheritparent, component only updates overrideme.jsp, this should have content &lt;h2>Override Me - Child 1 Content&lt;/h2>"/>
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/text"
+                    text="Child1 component, sling:resourceSuperType is set to aemdesign/components/layout/inheritparent, using cq:include, component only updates overrideme.jsp, this should have content &lt;h2>Override Me - Child 1 Content&lt;/h2>"/>
             <inherritchild1
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="slingresourcesupertypetest/components/inheritchild1"/>
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="slingresourcesupertypetest/components/inheritchild1"/>
             <label3
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/text"
-                text="Child2 component, sling:resourceSuperType is set to aemdesign/components/layout/inheritparent, component updates everything which is wrong"/>
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/text"
+                    text="Child2 component, sling:resourceSuperType is set to aemdesign/components/layout/inheritparent, using cq:include, component updates everything which is wrong"/>
             <inherritchild2
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="slingresourcesupertypetest/components/inheritchild2"/>
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="slingresourcesupertypetest/components/inheritchild2"/>
+            <label4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/text"
+                    text="Child3 component, sling:resourceSuperType is set to aemdesign/components/layout/inheritparent2, using 'include file'"/>
+            <inherritchild3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="slingresourcesupertypetest/components/inheritchild3"/>
+            <label5
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/text"
+                    text="Child4 component, sling:resourceSuperType is set to aemdesign/components/layout/inheritparent3, using sling:include"/>
+            <inherritchild4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="slingresourcesupertypetest/components/inheritchild4"/>
         </root>
     </jcr:content>
 </jcr:root>
